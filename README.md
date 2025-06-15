@@ -84,7 +84,6 @@ quantumsecureubuntu/
 
 ## 🧠 Credits and Acknowledgements
 
-- **Collin Blaine George** – Project lead and systems implementer
 - **ChatGPT-4o by OpenAI** – AI co-pilot, cryptography analyst, and documentation assistant
 - **Ubuntu Security Guides** – https://ubuntu.com/security
 - **DISA STIG** – https://public.cyber.mil/stigs/
