@@ -84,7 +84,7 @@ quantumsecureubuntu/
 
 ## 🧠 Credits and Acknowledgements
 
-- **ChatGPT-4o by OpenAI** – AI co-pilot, cryptography analyst, and documentation assistant
+- **ChatGPT-4o by OpenAI** – AI co-pilot, cryptography analyst, and documentation assistant posted and discoverable [here](https://chatgpt.com/share/684723d0-b094-8000-adbb-33a75f34c238)
 - **Ubuntu Security Guides** – https://ubuntu.com/security
 - **DISA STIG** – https://public.cyber.mil/stigs/
 - **Open Quantum Safe Project (liboqs)** – https://openquantumsafe.org/
