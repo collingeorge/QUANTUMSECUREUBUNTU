@@ -8,7 +8,7 @@ To create a hardened, NIST-compliant, FIPS 140-2 validated Ubuntu 22.04 LTS syst
 
 This project is documented as part of ongoing doctoral research in secure operating systems and post-quantum cryptography.
 
-- [📄 Download Thesis PDF](docs/thesis/quantum_secure_os_thesis.pdf)
+- [📄 Download Thesis PDF](https://github.com/collingeorge/QUANTUMSECUREUBUNTU/blob/docs/quantum_secure_os_thesis.pdf)
 
 ---
 
