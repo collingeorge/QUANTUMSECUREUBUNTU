@@ -4,12 +4,6 @@
 
 To create a hardened, NIST-compliant, FIPS 140-2 validated Ubuntu 22.04 LTS system using quantum-safe cryptography, secure authentication, and military-grade hardening practices — all deployed on bare metal.
 
-## 📘 Research Paper
-
-This project is documented as part of ongoing doctoral research in secure operating systems and post-quantum cryptography.
-
-- [📄 Download Thesis PDF](https://github.com/collingeorge/QUANTUMSECUREUBUNTU/blob/docs/quantum_secure_os_thesis.pdf)
-
 ---
 
 ## ✅ What's Been Completed
@@ -53,11 +47,6 @@ This project is documented as part of ongoing doctoral research in secure operat
 - ✅ Disabled edit mode (`c` / `e`) and locked boot parameters
 - ✅ Custom GRUB entries enforced via `40_custom`
 - ✅ Recovery shell locked with `sulogin` override
-
-### 📄 Thesis Progress (Live PDF)
-
-- ✅ Public academic paper draft uploaded
-- 📄 View: [Quantum Secure OS Thesis (PDF)](https://github.com/collingeorge/QUANTUMSECUREUBUNTU/blob/docs/quantum_secure_os_thesis.pdf)
 
 ---
 
