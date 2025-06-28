@@ -6,6 +6,18 @@ To create a hardened, NIST-compliant, FIPS 140-2 validated Ubuntu 22.04 LTS syst
 
 ---
 
+## 📄 Thesis Draft
+
+This project is part of an independent doctoral research initiative in secure operating system design, with a focus on national compliance standards (FIPS 140-2, NIST 800-53, DISA STIG) and quantum-resilient cryptographic infrastructure.
+
+✅ [Download Thesis PDF](QUANTUMSECUREUBUNTU/docs/quantum_secure_os_thesis.pdf)
+
+🔗 GitHub permalink: docs/quantum_secure_os_thesis.pdf
+
+✍️ Authored by Collin George, Cybersecurity Researcher
+
+This document is a live, open contribution to the scientific and security communities and may evolve as additional scripts and ISO deliverables are developed.
+
 ## ✅ What's Been Completed
 
 ### 🔒 Cryptography and FIPS
