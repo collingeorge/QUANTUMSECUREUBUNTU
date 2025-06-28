@@ -53,6 +53,37 @@ This document is a live, open contribution to the scientific and security commun
   - Strong MACs, KEX, Ciphers enforced
   - Root login disabled
 
+## 🛡️ DISA STIG Automation (Ansible)
+
+A fully functional, modified DISA STIG role for Ubuntu 22.04 is included:
+
+📁 automation/ansible/disa_stig_role
+
+🛠️ Modifications:
+
+PAM hardening tasks removed to avoid credential lockout
+
+Validated against a FIPS-enabled system
+
+Intended to run before enabling hardened login
+
+📌 Usage Recommendation:
+
+Apply this STIG role via Ansible:
+```
+ansible-playbook -i inventory.ini site.yml --check    # Audit mode
+ansible-playbook -i inventory.ini site.yml             # Enforcement mode
+```
+Immediately after, run ```fix_pam_login_post_stig.sh``` to re-enable password logins.
+
+Proceed with the hardened login 2FA module to complete the baseline.
+
+👥 Credits:
+
+Based on [ComplianceAsCode](https://github.com/ComplianceAsCode/content)
+
+Modified and maintained by [Collin George](https://github.com/collingeorge)
+
 ### 🔐 Bootloader Security
 
 - ✅ Password-protected GRUB menu
