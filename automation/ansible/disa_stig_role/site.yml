@@ -1,0 +1,16 @@
+# DISA STIG for Ubuntu 22.04 (Modified)
+#
+# Original: https://github.com/ComplianceAsCode/content
+# Modified by: Collin George, Independent Cybersecurity Researcher
+#
+# Summary:
+# - PAM/auth hardening tasks removed (conflicted with local password login)
+# - Used in sequence with: hardened_login.sh
+# - Verified functional and compliant with Ubuntu Pro FIPS mode
+---
+
+- name: Apply UBUNTU22 STIG hardening
+  hosts: all
+  become: true
+  roles:
+    - role: "{{ playbook_dir }}"

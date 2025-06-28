@@ -1,0 +1,298 @@
+---
+
+## metadata for Audit benchmark
+benchmark_version: {{ benchmark_version }}
+
+## Benchmark name used by audting control role
+# The audit variable found at the base
+benchmark: UBUNTU22-STIG
+
+
+
+# turn the categories on/off
+ubtu22stig_cat1: {{ ubtu22stig_cat1 }}
+ubtu22stig_cat2: {{ ubtu22stig_cat2 }}
+ubtu22stig_cat3: {{ ubtu22stig_cat3 }}
+
+
+# If using the supplied graphical interface
+ubtu22stig_gui: {{ ubtu22stig_gui }}
+
+# Some tests may need to scan every filesystem or have an impact on a system
+# these may need be scheduled to minimise impact
+run_heavy_tests: {{ audit_run_heavy_tests }}
+# Time out of commands
+timeout_ms: {{ audit_cmd_timeout }}
+
+# tweak role to run in a non-privileged container (default value)- dynamically discovered in tasks/main.yml
+system_is_container: {{ system_is_container }}
+
+# system acts or requires router networking options
+ubtu22stig_system_is_router: {{ ubtu22stig_system_is_router }}
+
+# Allow aide check to run - this can be very resource intensive - not good on shared storage multiple hosts
+ubtu22stig_allow_aide_check: {{ ubtu22stig_allow_aide_check }}
+
+# Cat 1 rules
+#### CAT 1
+ubtu22stig_211015: {{ ubtu22stig_211015 }}
+ubtu22stig_212010: {{ ubtu22stig_212010 }}
+ubtu22stig_215030: {{ ubtu22stig_215030 }}
+ubtu22stig_215035: {{ ubtu22stig_215035 }}
+ubtu22stig_255010: {{ ubtu22stig_255010 }}
+ubtu22stig_255015: {{ ubtu22stig_255015 }}
+ubtu22stig_255025: {{ ubtu22stig_255025 }}
+ubtu22stig_255040: {{ ubtu22stig_255040 }}
+ubtu22stig_271030: {{ ubtu22stig_271030 }}
+ubtu22stig_432015: {{ ubtu22stig_432015 }}
+ubtu22stig_611060: {{ ubtu22stig_611060 }}
+ubtu22stig_611065: {{ ubtu22stig_611065 }}
+ubtu22stig_612040: "'pam-pkcs11' in ansible_facts.packages"  # Only runs if pam-pkcs11 installed
+ubtu22stig_671010: "{{ ubtu22stig_subscribed }}"  # Only when subscribed
+
+# Cat 2 rules
+#### CAT 2
+ubtu22stig_212015: {{ ubtu22stig_212015 }}
+ubtu22stig_213015: {{ ubtu22stig_213015 }}
+ubtu22stig_213020: {{ ubtu22stig_213020 }}
+ubtu22stig_213025: {{ ubtu22stig_213025 }}
+ubtu22stig_214015: {{ ubtu22stig_214015 }}
+ubtu22stig_215010: {{ ubtu22stig_215010 }}
+ubtu22stig_231010: {{ ubtu22stig_231010 }}
+ubtu22stig_232010: {{ ubtu22stig_232010 }}
+ubtu22stig_232015: {{ ubtu22stig_232015 }}
+ubtu22stig_232020: {{ ubtu22stig_232020 }}
+ubtu22stig_232025: {{ ubtu22stig_232025 }}
+ubtu22stig_232026: {{ ubtu22stig_232026 }}
+ubtu22stig_232027: {{ ubtu22stig_232027 }}
+ubtu22stig_232030: {{ ubtu22stig_232030 }}
+ubtu22stig_232035: {{ ubtu22stig_232035 }}
+ubtu22stig_232040: {{ ubtu22stig_232040 }}
+ubtu22stig_232045: {{ ubtu22stig_232045 }}
+ubtu22stig_232050: {{ ubtu22stig_232050 }}
+ubtu22stig_232055: {{ ubtu22stig_232055 }}
+ubtu22stig_232060: {{ ubtu22stig_232060 }}
+ubtu22stig_232065: {{ ubtu22stig_232065 }}
+ubtu22stig_232070: {{ ubtu22stig_232070 }}
+ubtu22stig_232075: {{ ubtu22stig_232075 }}
+ubtu22stig_232080: {{ ubtu22stig_232080 }}
+ubtu22stig_232085: {{ ubtu22stig_232085 }}
+ubtu22stig_232090: {{ ubtu22stig_232090 }}
+ubtu22stig_232095: {{ ubtu22stig_232095 }}
+ubtu22stig_232100: {{ ubtu22stig_232100 }}
+ubtu22stig_232105: {{ ubtu22stig_232105 }}
+ubtu22stig_232110: {{ ubtu22stig_232110 }}
+ubtu22stig_232115: {{ ubtu22stig_232115 }}
+ubtu22stig_232120: {{ ubtu22stig_232120 }}
+ubtu22stig_232125: {{ ubtu22stig_232125 }}
+ubtu22stig_232130: {{ ubtu22stig_232130 }}
+ubtu22stig_232135: {{ ubtu22stig_232135 }}
+ubtu22stig_232140: {{ ubtu22stig_232140 }}
+ubtu22stig_232145: {{ ubtu22stig_232145 }}
+ubtu22stig_251010: {{ ubtu22stig_251010 }}
+ubtu22stig_251015: {{ ubtu22stig_251015 }}
+ubtu22stig_251020: {{ ubtu22stig_251020 }}
+ubtu22stig_251025: {{ ubtu22stig_251025 }}
+ubtu22stig_251030: {{ ubtu22stig_251030 }}
+ubtu22stig_253010: {{ ubtu22stig_253010 }}
+ubtu22stig_255020: {{ ubtu22stig_255020 }}
+ubtu22stig_255030: {{ ubtu22stig_255030 }}
+ubtu22stig_255035: {{ ubtu22stig_255035 }}
+ubtu22stig_255045: {{ ubtu22stig_255045 }}
+ubtu22stig_255050: {{ ubtu22stig_255050 }}
+ubtu22stig_255055: {{ ubtu22stig_255055 }}
+ubtu22stig_255060: {{ ubtu22stig_255060 }}
+ubtu22stig_255065: {{ ubtu22stig_255065 }}
+ubtu22stig_271010: {{ ubtu22stig_271010 }}
+ubtu22stig_271015: {{ ubtu22stig_271015 }}
+ubtu22stig_271020: {{ ubtu22stig_271020 }}
+ubtu22stig_271025: {{ ubtu22stig_271025 }}
+ubtu22stig_291010: {{ ubtu22stig_291010 }}
+ubtu22stig_291015: {{ ubtu22stig_291015 }}
+## 4XX – User Configuration
+ubtu22stig_411010: {{ ubtu22stig_411010 }}
+ubtu22stig_411015: {{ ubtu22stig_411015 }}
+ubtu22stig_411025: {{ ubtu22stig_411025 }}
+ubtu22stig_411030: {{ ubtu22stig_411030 }}
+ubtu22stig_411035: {{ ubtu22stig_411035 }}
+ubtu22stig_411040: {{ ubtu22stig_411040 }}
+ubtu22stig_412025: {{ ubtu22stig_412025 }}
+ubtu22stig_412030: {{ ubtu22stig_412030 }}
+ubtu22stig_412035: {{ ubtu22stig_412035 }}
+ubtu22stig_431010: {{ ubtu22stig_431010 }}
+ubtu22stig_431015: {{ ubtu22stig_431015 }}
+ubtu22stig_432010: {{ ubtu22stig_432010 }}
+## 6xx - Authentication, Authorization and Accounting
+ubtu22stig_611010: {{ ubtu22stig_611010 }}
+ubtu22stig_611015: {{ ubtu22stig_611015 }}
+ubtu22stig_611020: {{ ubtu22stig_611020 }}
+ubtu22stig_611025: {{ ubtu22stig_611025 }}
+ubtu22stig_611030: {{ ubtu22stig_611030 }}
+ubtu22stig_611035: {{ ubtu22stig_611035 }}
+ubtu22stig_611040: {{ ubtu22stig_611040 }}
+ubtu22stig_611045: {{ ubtu22stig_611045 }}
+ubtu22stig_611055: {{ ubtu22stig_611055 }}
+ubtu22stig_611070: {{ ubtu22stig_611070 }}
+ubtu22stig_612010: {{ ubtu22stig_612010 }}
+ubtu22stig_612015: {{ ubtu22stig_612015 }}
+ubtu22stig_612020: {{ ubtu22stig_612020 }}
+ubtu22stig_612025: {{ ubtu22stig_612025 }}
+ubtu22stig_612030: {{ ubtu22stig_612030 }}
+ubtu22stig_612035: {{ ubtu22stig_612035 }}
+ubtu22stig_631010: {{ ubtu22stig_631010 }}
+ubtu22stig_651010: {{ ubtu22stig_651010 }}
+ubtu22stig_651015: {{ ubtu22stig_allow_aide_check }}
+ubtu22stig_651020: {{ ubtu22stig_651020 }}
+ubtu22stig_651025: {{ ubtu22stig_651025 }}
+ubtu22stig_651030: {{ ubtu22stig_651030 }}
+ubtu22stig_652010: {{ ubtu22stig_652010 }}
+ubtu22stig_652015: {{ ubtu22stig_652015 }}
+ubtu22stig_653010: {{ ubtu22stig_653010 }}
+ubtu22stig_653015: {{ ubtu22stig_653015 }}
+ubtu22stig_653030: {{ ubtu22stig_653030 }}
+ubtu22stig_653045: {{ ubtu22stig_653045 }}
+ubtu22stig_653050: {{ ubtu22stig_653050 }}
+ubtu22stig_653055: {{ ubtu22stig_653055 }}
+ubtu22stig_653060: {{ ubtu22stig_653060 }}
+ubtu22stig_653065: {{ ubtu22stig_653065 }}
+ubtu22stig_653070: {{ ubtu22stig_653070 }}
+ubtu22stig_653075: {{ ubtu22stig_653075 }}
+ubtu22stig_654010: {{ ubtu22stig_654010 }}
+ubtu22stig_654015: {{ ubtu22stig_654015 }}
+ubtu22stig_654020: {{ ubtu22stig_654020 }}
+ubtu22stig_654025: {{ ubtu22stig_654025 }}
+ubtu22stig_654030: {{ ubtu22stig_654030 }}
+ubtu22stig_654035: {{ ubtu22stig_654035 }}
+ubtu22stig_654040: {{ ubtu22stig_654040 }}
+ubtu22stig_654045: {{ ubtu22stig_654045 }}
+ubtu22stig_654050: {{ ubtu22stig_654050 }}
+ubtu22stig_654055: {{ ubtu22stig_654055 }}
+ubtu22stig_654060: {{ ubtu22stig_654060 }}
+ubtu22stig_654065: {{ ubtu22stig_654065 }}
+ubtu22stig_654070: {{ ubtu22stig_654070 }}
+ubtu22stig_654075: {{ ubtu22stig_654075 }}
+ubtu22stig_654080: {{ ubtu22stig_654080 }}
+ubtu22stig_654085: {{ ubtu22stig_654085 }}
+ubtu22stig_654090: {{ ubtu22stig_654090 }}
+ubtu22stig_654095: {{ ubtu22stig_654095 }}
+ubtu22stig_654100: {{ ubtu22stig_654100 }}
+ubtu22stig_654105: {{ ubtu22stig_654105 }}
+ubtu22stig_654110: {{ ubtu22stig_654110 }}
+ubtu22stig_654115: {{ ubtu22stig_654115 }}
+ubtu22stig_654120: {{ ubtu22stig_654120 }}
+ubtu22stig_654125: {{ ubtu22stig_654125 }}
+ubtu22stig_654130: {{ ubtu22stig_654130 }}
+ubtu22stig_654135: {{ ubtu22stig_654135 }}
+ubtu22stig_654140: {{ ubtu22stig_654140 }}
+ubtu22stig_654145: {{ ubtu22stig_654145 }}
+ubtu22stig_654150: {{ ubtu22stig_654150 }}
+ubtu22stig_654155: {{ ubtu22stig_654155 }}
+ubtu22stig_654160: {{ ubtu22stig_654160 }}
+ubtu22stig_654165: {{ ubtu22stig_654165 }}
+ubtu22stig_654170: {{ ubtu22stig_654170 }}
+ubtu22stig_654175: {{ ubtu22stig_654175 }}
+ubtu22stig_654180: {{ ubtu22stig_654180 }}
+ubtu22stig_654185: {{ ubtu22stig_654185 }}
+ubtu22stig_654190: {{ ubtu22stig_654190 }}
+ubtu22stig_654195: {{ ubtu22stig_654195 }}
+ubtu22stig_654200: {{ ubtu22stig_654200 }}
+ubtu22stig_654205: {{ ubtu22stig_654205 }}
+ubtu22stig_654210: {{ ubtu22stig_654210 }}
+ubtu22stig_654215: {{ ubtu22stig_654215 }}
+ubtu22stig_654220: {{ ubtu22stig_654220 }}
+ubtu22stig_654225: {{ ubtu22stig_654225 }}
+ubtu22stig_654230: {{ ubtu22stig_654230 }}
+ubtu22stig_654235: {{ ubtu22stig_654235 }}
+
+#### CAT 3
+ubtu22stig_213010: {{ ubtu22stig_213010 }}
+ubtu22stig_214010: {{ ubtu22stig_214010 }}
+ubtu22stig_215015: {{ ubtu22stig_215015 }}
+ubtu22stig_215020: {{ ubtu22stig_215020 }}
+ubtu22stig_215025: {{ ubtu22stig_215025 }}
+ubtu22stig_252010: {{ ubtu22stig_252010 }}
+ubtu22stig_252015: {{ ubtu22stig_252015 }}
+ubtu22stig_252020: {{ ubtu22stig_252020 }}
+ubtu22stig_411045: {{ ubtu22stig_411045 }}
+ubtu22stig_412010: {{ ubtu22stig_412010 }}
+ubtu22stig_412015: {{ ubtu22stig_412015 }}
+ubtu22stig_412020: {{ ubtu22stig_412020 }}
+ubtu22stig_631015: {{ ubtu22stig_631015 }}
+ubtu22stig_651035: {{ ubtu22stig_651035 }}
+ubtu22stig_653020: {{ ubtu22stig_653020 }}
+ubtu22stig_653025: {{ ubtu22stig_653025 }}
+ubtu22stig_653035: {{ ubtu22stig_653035 }}
+ubtu22stig_653040: {{ ubtu22stig_653040 }}
+
+# Variables
+
+## Bootloader Settings
+ubtu22stig_bootloader_password_hash: {{ ubtu22stig_bootloader_password_hash }}
+
+ubtu22stig_logon_banner:
+  - You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+  - By using this IS (which includes any device attached to this IS), you consent to the following conditions
+  - -The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+  - -At any time, the USG may inspect and seize data stored on this IS.
+  - -Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+  - -This IS includes security measures (e.g., authentication and access controls) to protect USG interests--not for your personal benefit or privacy.
+  - -Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details.
+
+# Sysctl file
+ubtu22stig_sysctl_file_default: {{ ubtu22stig_sysctl_file_default }}
+
+
+## 25xxxx
+
+
+# Set sysctl files
+ubtu22stig_sysctl_file:
+  kernel: "{{ ubtu22stig_sysctl_file_default }}"
+  network: "{{ ubtu22stig_sysctl_file_default }}"
+
+# Chrony
+ubtu22stig_time_synchronization_servers:
+{% for time_server in ubtu22stig_time_synchronization_servers %}
+  - {{ time_server }}
+{% endfor %}
+ubtu22stig_chrony_server_options: "{{ ubtu22stig_chrony_server_options }}"  # Max Settings is maxpoll 16
+
+
+## SSHD
+ubtu22stig_ssh_required: true
+ubtu22stig_sshd_config_file: {{ ubtu22stig_sshd_config_file }}
+ubtu22stig_sshd_config_clientalivecountmax: {{ ubtu22stig_sshd_config_clientalivecountmax }}
+ubtu22stig_sshd_config_clientaliveinterval: {{ ubtu22stig_sshd_config_clientaliveinterval }}
+ubtu22stig_sshd_config_ciphers: {{ ubtu22stig_sshd_config_ciphers }}
+ubtu22stig_sshd_config_macs: {{ ubtu22stig_sshd_config_macs }}
+ubtu22stig_sshd_config_kex: {{ ubtu22stig_sshd_config_kex }}
+
+##27XXXX GUI Settings
+{% if ubtu22stig_dconf_locald_files.files is defined %}
+ubtu22stig_dconf_locald_files:
+{% for file in ubtu22stig_dconf_locald_files.files %}
+- {{ file.path }}
+{% endfor %}
+{% endif %}
+
+{% if ubtu22stig_gui %}
+{% if ubtu22stig_dconf_db is defined %}
+ubtu22stig_dconf_db: {{ ubtu22stig_dconf_db.stdout }}
+{% endif %}
+{% endif %}
+
+# 611xxx
+# ubtu22stig_passwd_hash_algo is the hashing algorithm used - STIG required SHA512 - default is newer yescrypt
+ubtu22stig_passwd_hash_algo: {{ ubtu22stig_passwd_hash_algo }}  # pragma: allowlist secret
+
+# 653xxx
+### AUDITD
+ubtu22stig_audit_log_filesystem: {{ ubtu22stig_audit_log_filesystem }}
+ubtu22stig_auditd_disk_full_action: {{ ubtu22stig_auditd_disk_full_action }} # Can be one of "SYSLOG", "SINGLE", or "HALT"
+ubtu22stig_auditd_log_group: {{ ubtu22stig_auditd_log_group }}
+ubtu22stig_auditd_email_acct: {{ ubtu22stig_auditd_email_acct }}
+ubtu22stig_auditd_space_left: {{ ubtu22stig_auditd_space_left }}
+ubtu22stig_auditd_space_left_action: {{ ubtu22stig_auditd_space_left_action }} # Can be set to exec if running script to inform ISSO
+
+# Adjust to match remote syslog server configuration
+ubtu22stig_remotelog_server_address: {{ ubtu22stig_remotelog_server_address }}
