@@ -7,7 +7,8 @@
 - [🕵️ What's Left To Do](#-whats-left-to-do)
 - [📁 Directory Structure](#-directory-structure)
 - [📄 Thesis Draft](#-thesis-draft)
-- [🛡️ DISA STIG Automation (Ansible)](#-disa-stig-automation-ansible)
+- [🛡️ DISA STIG Automation (Ansible)](#-disa-stig-automation)
+- [⏱️ Secure Time Synchronization (Chrony + NIST)](#-secure-time-synchronization)
 - [🧠 Credits and Acknowledgements](#-credits-and-acknowledgements)
 - [📜 License](#-license)
 
