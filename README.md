@@ -119,7 +119,7 @@ bash ./scripts/fix_pam_login_post_stig.sh
 ```
 ---
 
-## ⏱️ Secure Time Synchronization (Chrony + NIST)
+## ⏱️ Secure Time Synchronization
 
 This system uses a hardened and verifiable time configuration script that ensures accurate and trusted time using NIST and Google NTP servers. The script leverages `chrony`, a modern and secure NTP daemon, and enforces good security practices.
 
