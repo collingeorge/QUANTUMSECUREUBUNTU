@@ -72,6 +72,7 @@ quantumsecureubuntu/
 │   └── quantum_secure_os_thesis.pdf
 ├── scripts/
 │   └── fix_pam_login_post_stig.sh
+    └── secure_ntp_config.sh
 ├── automation/
 │   └── ansible/
 │       └── disa_stig_role/
