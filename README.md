@@ -116,7 +116,50 @@ bash ./scripts/fix_pam_login_post_stig.sh
 # Step 4: Configure hardened login (Google Authenticator)
 # Follow script/README instructions in login hardening module (TBD)
 ```
+---
 
+## ⏱️ Secure Time Synchronization (Chrony + NIST)
+
+This system uses a hardened and verifiable time configuration script that ensures accurate and trusted time using NIST and Google NTP servers. The script leverages `chrony`, a modern and secure NTP daemon, and enforces good security practices.
+
+📄 **Script Location:** `scripts/secure_ntp_config.sh`
+
+### ✅ Features
+
+- Installs and configures `chrony`
+- Adds secure, validated NTP sources:
+  - `time1.google.com`
+  - `time2.google.com`
+  - `time.cloudflare.com`
+  - `time.nist.gov`
+  - `time-e-wwv.nist.gov`
+- Verifies status via `chronyc sources`
+- Backs up existing configuration
+- Reloads system time services securely
+
+### 🚀 Usage
+
+```bash
+chmod +x ./scripts/secure_ntp_config.sh
+sudo ./scripts/secure_ntp_config.sh
+```
+
+### 🛠️ Example Output
+
+```text
+[+] Backing up existing Chrony config...
+[+] Configuring Chrony with secure NTP servers...
+[+] Enabling and restarting Chrony service...
+[+] Verifying time sync status...
+
+MS Name/IP address         Stratum Poll Reach LastRx Last sample
+===============================================================================
+^? time-e-wwv.nist.gov           1   6     1     1   +295us[ +295us] +/-   22ms
+^? time1.google.com              1   6     1     2  +1536us[+1536us] +/- 9005us
+^? time.cloudflare.com          3   6     1     2   -322us[ -322us] +/-   46ms
+...
+[+] Done. Your system is now using secure and verified NTP time sources.
+```
 ---
 
 ## 🧠 Credits and Acknowledgements
