@@ -7,8 +7,8 @@
 - [🕵️ What's Left To Do](#-whats-left-to-do)
 - [📁 Directory Structure](#-directory-structure)
 - [📄 Thesis Draft](#-thesis-draft)
-- [🛡️ DISA STIG Automation](#-disa-stig-automation)
-- [⏱️ Secure Time Synchronization (Chrony + NIST)](#-secure-time-synchronization)
+- [🛡️ DISA STIG Automation](#-disa-stig-automation-ansible)
+- [⏱️ Secure Time Synchronization (Chrony + NIST)](secure-time-synchronization-chrony-nist)
 - [🧠 Credits and Acknowledgements](#-credits-and-acknowledgements)
 - [📜 License](#-license)
 
@@ -92,7 +92,7 @@ This project is part of an independent doctoral research initiative in secure op
 
 ---
 
-## 🛡️ DISA STIG Automation
+## 🛡️ DISA STIG Automation (Ansible)
 
 📁 [automation/ansible/disa_stig_role](./automation/ansible/disa_stig_role)
 
