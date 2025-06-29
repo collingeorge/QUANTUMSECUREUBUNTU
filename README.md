@@ -8,7 +8,7 @@
 - [📁 Directory Structure](#-directory-structure)
 - [📄 Thesis Draft](#-thesis-draft)
 - [🛡️ DISA STIG Automation](#-disa-stig-automation-ansible)
-- [⏱️ Secure Time Synchronization (Chrony + NIST)](secure-time-synchronization-chrony-nist)
+- [⏱️ Secure Time Synchronization (Chrony + NIST)](#secure-time-synchronization-chrony--nist) 
 - [🧠 Credits and Acknowledgements](#-credits-and-acknowledgements)
 - [📜 License](#-license)
 
