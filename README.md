@@ -92,7 +92,7 @@ This project is part of an independent doctoral research initiative in secure op
 
 ---
 
-## 🛡️ DISA STIG Automation (Ansible)
+## 🛡️ DISA STIG Automation
 
 📁 [automation/ansible/disa_stig_role](./automation/ansible/disa_stig_role)
 
